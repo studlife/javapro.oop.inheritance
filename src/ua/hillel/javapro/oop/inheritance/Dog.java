@@ -1,9 +1,12 @@
 package ua.hillel.javapro.oop.inheritance;
 
 public class Dog extends Animal{
+    private static int countDog;
 
     Dog(String name) {
+
         super(name);
+        countDog++;
     }
 
 
@@ -34,9 +37,7 @@ public class Dog extends Animal{
     }
 
 
-//    @Override
-//    public String getName() {
-//        //return "I am a dog. My name is " + super.getName();
-//        return super.getName();
-//    }
+    public static void getCountDog() {
+        System.out.println( Dog.countDog + " - песика прийняло участь");
+    }
 }

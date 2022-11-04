@@ -7,13 +7,18 @@ public class Application {
         bobik.run(-550);
         bobik.swim(12);
 
+        Dog barboskin = new Dog("Barboskin");
+        Dog sharik = new Dog("Sharik");
+
         Cat vasya = new Cat ("Vasya");
         vasya.run(250);
         vasya.swim(10);
 
+        Cat murzik = new Cat ("Murzik");
 
-
-        System.out.println("У тесті взяло участь " + Animal.getCount() + " тварини.");
+        Animal.getCount();
+        Dog.getCountDog();
+        Cat.getCountCat();
 
     }
 }

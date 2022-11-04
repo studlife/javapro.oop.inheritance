@@ -25,7 +25,9 @@ public class Animal {
         return name;
     }
 
-    public static int getCount() {
-        return count;
+    public static void getCount() {
+
+        System.out.println("У тесті взяло участь " + Animal.count + " тварини.");
+
     }
 }

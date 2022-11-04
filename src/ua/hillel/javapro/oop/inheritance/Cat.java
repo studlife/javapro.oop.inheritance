@@ -2,8 +2,11 @@ package ua.hillel.javapro.oop.inheritance;
 
 public class Cat extends Animal{
 
+    private static int countCat;
+
     Cat(String name) {
         super(name);
+        countCat++;
     }
 
 
@@ -23,5 +26,10 @@ public class Cat extends Animal{
     @Override
     public void swim(int x) {
         System.out.println("Шкода котика! Але " + getName() + " не вміє плавати...");
+    }
+
+
+    public static void getCountCat() {
+        System.out.println( Cat.countCat + " - кота прийняло участь");
     }
 }
