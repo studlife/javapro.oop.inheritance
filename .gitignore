@@ -1,6 +1,7 @@
 ### IntelliJ IDEA ###
 .idea/
 *.iml
+src/class-diagram.plantuml
 
 out/
 !**/src/main/**/out/
