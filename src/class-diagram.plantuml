@@ -1,0 +1,25 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Animal {
+- name: String
+- count: int
++run ();
++swim ();
+}
+
+class Dog {
+
+}
+
+class Cat {
+
+}
+
+
+
+Animal <|-- Dog
+Animal <|-- Cat
+
+
+@enduml
